@@ -49,6 +49,8 @@ function init_repo() {
             exit 1
         fi
     fi
+    
+    ssh-add "${ssh_key_path}${ssh_key_file}"
 
     git init
 
